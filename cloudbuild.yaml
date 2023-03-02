@@ -3,7 +3,5 @@ steps:
     args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://poc-static-site"]
 options:
   logging: CLOUD_LOGGING_ONLY
-steps:
-  - name: gcr.io/cloud-builders/git
-    args: ['fetch', '--unmarshallow']
+
 ...
